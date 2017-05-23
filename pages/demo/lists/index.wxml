@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<loading hidden="{{hiddenLoading}}" >正在加载</loading>
+<scroll-view scroll-y="true" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" bindscrolltolower="loadMore" >
+  <view wx:for="{{items}}" wx:for-item="item"  wx:key="items">
+    <view class="l-r l-c item">
+      <view class="image">
+        <image src="{{item.imgs[0]}}"/>
+      </view>
+      <view class="l_auto item-right">
+        <view class="title"><text>{{item.title}}</text></view>
+        <text>{{item.quantity}}{{item.unit}}/份</text>
+        <text class="c-1">￥{{item.price/100}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -2,6 +2,7 @@
   "pages":[
     "pages/demo/index",
     "pages/demo/list/index",
+    "pages/demo/lists/index",
     "pages/component/index",
     "pages/component/component-pages/action-sheet/action-sheet",
     "pages/component/component-pages/audio/audio",

@@ -21,7 +21,6 @@
     </view>
 
     <view class="text" >
-        <view  style="color:#ff4400;" catchtap="goBaidu">haha</view>
         <view class="line_y"></view>
         <text>精品特价</text>
     </view>
