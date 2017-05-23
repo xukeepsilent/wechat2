@@ -35,3 +35,9 @@ App({
     userInfo:null
   }
 })
+
+// App : 注册一个小程序
+// onLunch :程序加载时执行的方法
+// getStorageSync：以同步的方式获取本地缓存
+// setStorageSync：设置缓存
+// wx.getUserInfo: 获取用户信息

@@ -46,5 +46,10 @@ Page({
         this.setData({
             list: list
         });
+    },
+    goAPI: function () {
+        wx.navigateTo({
+            url:'../API/index/index'
+        })
     }
 });

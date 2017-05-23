@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="swiper_box">
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <view wx:for-items="{{images}}" wx:for-item="image" wx:key="unique">
+                <swiper-item>
+                    <image src="{{image}}" class="slide-image"/>
+                </swiper-item>
+            </view>
+        </swiper>
+    </view>
+
+    <view class=" index-nav">
+        <block wx:for-items="{{navs}}" wx:key="navs">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}" class="slide-image"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+
+    <view class="text" >
+        <view  style="color:#ff4400;" catchtap="goBaidu">haha</view>
+        <view class="line_y"></view>
+        <text>精品特价</text>
+    </view>
+  
+    <block wx:for-items="{{items}}" wx:key="items">
+        <view class="item">
+            <image src="{{item.image}}" class="slide-image"/>
+        </view>
+    </block>
+</view>
